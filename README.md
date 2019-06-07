@@ -1,6 +1,6 @@
 # MAM watcher
 
-This application writes data to a [masked authenticated messaging (MAM)](https://blog.iota.org/introducing-masked-authenticated-messaging-e55c1822d50e) stream and allows you to subscribe to that stream and read the messages.
+This application writes messages to a [masked authenticated messaging (MAM)](https://blog.iota.org/introducing-masked-authenticated-messaging-e55c1822d50e) stream on the [IOTA Devnet](https://docs.iota.org/docs/getting-started/0.1/references/iota-networks#devnet), and allows you to subscribe to that stream and read the messages.
 
 ![MAM watcher](mam-watcher.gif)
 
