@@ -1,13 +1,48 @@
-# Mam Watcher
+# MAM watcher
 
-A Simple MAM stream sender and watcher. Shows off simple logic to enable users to subscribe to a mam stream.
+This application writes data to a [masked-authenticated-messaging (MAM)](https://blog.iota.org/introducing-masked-authenticated-messaging-e55c1822d50e) stream and allows you to subscribe to that stream to read the messages.
 
-## Getting started
+## Prerequisites
 
-```bash
-npm i
+To use this demo, you need the following:
 
-node sender.js
+* [An LTS version or the latest version of Node.js and NPM](https://nodejs.org/en/download/)
 
-node fetcher.js <mam-root>
-```
+* [Git](https://git-scm.com/download/linux)
+
+## Run the application
+
+1. Clone this repository
+
+  ```
+  git clone https://github.com/iota-community/raspberrypi-pubsub
+  ```
+2. Change into the `raspberrypi-pubsub` directory
+
+  ```bash
+  cd raspberrypi-pubsub
+  ```
+3. Install the dependencies
+
+  ```bash
+  npm install
+  ```
+4. Start sending messages to a MAM stream
+
+  ```bash
+  node sender.js
+  ```
+  
+5. Copy the first address that appears in the console
+
+6. Open a new command prompt window
+
+7. Subscribe to the MAM stream by using the address you just copied
+
+  ```
+  node fetcher.js <address (also called the MAM root>
+  ```
+
+In the console, you should see that the current temperature in Celcius is sent as a transaction to a node on the Devnet.
+
+![Response data](raspberrypi-pubsub.gif)
