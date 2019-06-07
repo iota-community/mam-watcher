@@ -2,6 +2,8 @@
 
 This application writes data to a [masked-authenticated-messaging (MAM)](https://blog.iota.org/introducing-masked-authenticated-messaging-e55c1822d50e) stream and allows you to subscribe to that stream to read the messages.
 
+![MAM watcher](mam-watcher.gif)
+
 ## Prerequisites
 
 To use this demo, you need the following:
@@ -35,6 +37,8 @@ To use this demo, you need the following:
   
 5. Copy the first address that appears in the console
 
+  ![Copy the address](copy-mam-root.png)
+
 6. Open a new command prompt window
 
 7. Subscribe to the MAM stream by using the address you just copied
@@ -42,7 +46,7 @@ To use this demo, you need the following:
   ```
   node fetcher.js <address (also called the MAM root>
   ```
+  
+  ![Paste the address as an argument](paste-mam-root.png)
 
-In the console, you should see that the current temperature in Celcius is sent as a transaction to a node on the Devnet.
-
-![Response data](raspberrypi-pubsub.gif)
+In the console, you should see that the `sender.js` window sends transactions and the `fetcher.js` window subscribes to the channel and receives the messages.
