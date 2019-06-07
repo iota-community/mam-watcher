@@ -37,7 +37,7 @@ To use this demo, you need the following:
   
 5. Copy the first address that appears in the console
 
-  ![Copy the address](copy-mam-root.png)
+  <img src="copy-mam-root.png" width="400">
 
 6. Open a new command-prompt window
 
@@ -47,6 +47,6 @@ To use this demo, you need the following:
   node fetcher.js <address (also called the MAM root)>
   ```
   
-  ![Paste the address as an argument](paste-mam-root.png)
+  <img src="paste-mam-root.png" width="400">
 
 In the console, you should see that the `sender.js` window sends transactions and the `fetcher.js` window subscribes to the channel and retrieves the messages from the Tangle.
